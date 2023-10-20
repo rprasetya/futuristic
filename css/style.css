@@ -1,0 +1,199 @@
+:root{
+    --bg: #000000;
+    --primary: #facd00;
+    --secondary: #58008A;
+    --accent: #EEE6F3;
+    --accent-darker: #b7b0bb;
+}
+
+@font-face {
+    font-family: 'Circular-Black';
+    src: url(../assets/font/Circular/CircularStd-Black.otf);
+}
+
+@font-face {
+    font-family: 'Circular-Book';
+    src: url(../assets/font/Circular/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: 'Circular-Light';
+    src: url(../assets/font/Circular/CircularStd-Light.otf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--bg);
+}
+
+main{
+    background-color: var(--bg);
+    width: 100vw;
+}
+
+
+/* Responsive */
+/* Handphone */
+@media screen and (max-width: 576px){
+    nav{
+        display: flex;
+        position: fixed;
+        padding-top: 3vh;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+    }
+    nav .navTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .navTitle img{
+        height: 4.5vh;
+    }
+
+    nav ul{
+        display: flex;
+        position: fixed;
+        right: 9vw;
+        top: 4vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    nav ul li{
+        list-style: none;
+    }
+
+    nav ul .navigation{
+        transition: .7s;
+    }
+    .hamburger-menu{
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger-menu .bar{
+        width: 6vw;
+        height: .3vh;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: .35vh 0;
+    }
+    .hamburger-menu:active {
+        margin-right: 1vw;
+    }
+    nav ul li svg{
+        height: 3vh;
+    }
+    /* Home */
+    .home{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .homeTitleCont{
+        display: flex;
+        width: 83%;
+        flex-direction: column;
+    }
+
+    .homeTitle {
+        display: flex;
+        width: fit-content;
+    }
+
+     .homeTitle span{
+        font-family: 'Circular-Book';
+        font-size: 4.5vh;
+        color: var(--primary);
+        border-right: 1px solid var(--accent);
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        animation: 
+            typing 1.3s steps(11),
+            cursor .7s step-end infinite alternate;
+    }
+    @keyframes cursor {
+        50%{
+            border-color: transparent;
+        }
+    }
+    @keyframes typing {
+        from { width:0 }
+    }
+    .tagline{
+        color: var(--accent);
+        font-family: 'Circular-Light';
+        font-size: 3.5vh;
+        transform: translateX(-100vw);
+        transition: 1s;
+        opacity: 0;
+    }
+    .homeSubtitle{
+        display: flex;
+        width: 83%;
+        padding: 10vh 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeSubtitle h2{
+        font-size: 4vh;
+        color: var(--accent);
+        font-family: 'Circular-Light';
+    }
+    .homeSubtitle img{
+        width: 55%;
+        animation: blinking infinite;
+        animation-duration: 3s;
+    }
+    @keyframes blinking{
+        50%{
+            opacity: .6;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .specs{
+        display: flex;
+        width: 83%;
+        padding-top: 5vh;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .specs h2{
+        font-family: 'Circular-Light';
+        color: var(--accent);
+        font-size: 1.5vh;
+    }
+    .specs p{
+        font-family: 'Circular-Light';
+        color: var(--accent-darker);
+        font-size: 1.5vh;
+    }
+
+
+
+    /* Home End */
+}
