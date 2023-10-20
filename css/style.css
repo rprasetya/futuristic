@@ -165,6 +165,9 @@ main{
         animation-duration: 3s;
     }
     @keyframes blinking{
+        0%{
+            opacity: 1;
+        }
         50%{
             opacity: .6;
         }
@@ -180,14 +183,19 @@ main{
         justify-content: center;
         /* align-items: center; */
         flex-direction: column;
-        gap: 2vh;
+        gap: 2.5vh;
     }
-    .specs h2{
+    .spec{
+        display: flex;
+        flex-direction: column;
+        gap: .5vh;
+    }
+    .spec h2{
         font-family: 'Circular-Light';
         color: var(--accent);
-        font-size: 1.5vh;
+        font-size: 1.7vh;
     }
-    .specs p{
+    .spec p{
         font-family: 'Circular-Light';
         color: var(--accent-darker);
         font-size: 1.5vh;
