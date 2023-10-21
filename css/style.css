@@ -215,11 +215,11 @@ main{
         display: flex;
         flex-direction: column;
         /* background-color: var(--bg-darker); */
-        padding: 15vh 0;
-        gap: 10vh;
+        padding: 10vh 0;
+        gap: 15vh;
     }
     .aboutCont .groupImg{
-        padding: 5vh 0;
+        padding-top: 10vh;
         display: flex;
         width: 100vw;
         flex-direction: column;
@@ -227,7 +227,7 @@ main{
         align-items: center;
     }
     .aboutCont .groupImg img{
-        width: 100vw;
+        width: 95vw;
     }
     .groupImg h2{
         display: flex;
@@ -237,7 +237,8 @@ main{
         font-family: "Circular-Light";
         line-height: 10vh;
         color: transparent;
-        padding-top: 47vh;
+        padding-top: 44.5vh;
+        padding-left: 3vw;
     }
     .carousel{
         display: grid;
@@ -259,26 +260,26 @@ main{
         justify-content: start;
         width: 75vw;
         height: 100%;
+        border-radius: 10px;
         border: 1px solid var(--accent-darker);
     }
     .card .cardContent{
-        border-radius: 5px;
         display: flex;
         flex-direction: column;
         padding: 0 10%;
         gap: 1vh;
         font-family: "Circular-Black";
+        padding-top: 10vh;
+        padding-bottom: 5vh;
     }
     
     .cardContent h1{
-        padding-top: 10vh;
         font-size: 3vh;
         color: transparent;
         -webkit-text-stroke: 1px var(--accent-darker);
     }
     
     .cardContent p{
-        padding-bottom: 5vh;
         font-size: 2vh;
         color: var(--accent-darker);
         font-family: "Circular-Light";    
