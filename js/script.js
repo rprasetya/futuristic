@@ -29,3 +29,5 @@ window.addEventListener('load', () => {
         tagline.style.transform = 'translateX(0vw)'
     })
 })
+
+// Carrousel
