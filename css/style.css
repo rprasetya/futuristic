@@ -5,6 +5,7 @@
     --secondary: #58008A;
     --accent: #EEE6F3;
     --accent-darker: #b7b0bb;
+    --accent-very-darker: #666666;
 }
 
 @font-face {
@@ -31,17 +32,19 @@
     /* overflow-x: hidden; */
 }
 
+body{
+    background: linear-gradient(to bottom, #202020, #000000, #111111);
+}
+
 header{
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 10vh;
     /* background-color: var(--bg); */
-    background-color: #202020;
 }
 
 main{
-    background: linear-gradient(to bottom, #202020, #000000);
     width: 100vw;
 }
 
@@ -215,11 +218,11 @@ main{
         display: flex;
         flex-direction: column;
         /* background-color: var(--bg-darker); */
-        padding: 10vh 0;
+        padding: 15vh 0;
         gap: 15vh;
     }
     .aboutCont .groupImg{
-        padding-top: 10vh;
+        padding-top: 5vh;
         display: flex;
         width: 100vw;
         flex-direction: column;
@@ -269,22 +272,80 @@ main{
         padding: 0 10%;
         gap: 1vh;
         font-family: "Circular-Black";
-        padding-top: 10vh;
+        padding-top: 5vh;
         padding-bottom: 5vh;
-    }
-    
+    }    
     .cardContent h1{
         font-size: 3vh;
         color: transparent;
         -webkit-text-stroke: 1px var(--accent-darker);
     }
-    
     .cardContent p{
         font-size: 2vh;
         color: var(--accent-darker);
         font-family: "Circular-Light";    
     } 
-
-
     /* About End */
+    /* Contact */
+    .contactCont{
+        /* background-color: red; */
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    .contactTitle{
+        border-top: 1px solid var(--accent-very-darker);
+        /* background-color: red; */
+        width: 90%;
+    }
+    .contactTitle span{
+        font-size: 13vh;
+        font-family: "Circular-Book";
+        color: var(--accent);
+    }
+    .socialCont{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .contactDesc{
+        border-top: 1px solid var(--accent-very-darker);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+    }
+    .contact{
+        padding-top: 7vh;
+        width: 95%;
+        font-family: 'Circular-Light';
+        color: var(--accent-darker);
+    }
+    .contactLink{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 7vh;
+        width: 95%;
+        gap: 1vh;
+        font-family: "Circular-Book";
+        color: var(--accent-darker);
+    }
+    .contactLink a{
+        text-decoration: none;
+        width: fit-content;
+        border-bottom: 1px solid var(--accent-darker);
+        color: var(--accent-darker);
+    }
+    /* Contact End */
+    /* Footer */
+    footer{
+        height: 100vh;
+        width: 100vw;
+    }
+    /* Footer End*/
 }
