@@ -34,6 +34,7 @@
 
 body{
     background: linear-gradient(to bottom, #202020, #000000, #111111);
+    overflow: hidden;
 }
 
 header{
@@ -47,11 +48,32 @@ header{
 main{
     width: 100vw;
 }
-
-
+.block{
+    display: flex;
+    position: fixed;
+    background-color: var(--bg);
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.block::after{
+    font-family: "Circular-Book";
+    font-size: 20vh;
+    color: var(--accent);
+    content:"Sorry We're not Compatible with your device";
+}
 /* Responsive */
 /* Handphone */
 @media screen and (max-width: 576px){
+    body{
+        overflow: auto;
+    }
+    .block{
+        display: none;
+        opacity: 0;
+    }
     nav{
         display: flex;
         position: fixed;
