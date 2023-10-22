@@ -343,6 +343,7 @@ main{
         gap: 3vh;
     }
     .contact{
+        font-size: 2vh;
         padding-top: 7vh;
         width: 95%;
         font-family: 'Circular-Light';
