@@ -310,16 +310,14 @@ main{
     /* About End */
     /* Contact */
     .contactCont{
-        /* background-color: red; */
-        padding-top: 5vh;
+        margin-top: 5vh;
         display: flex;
         flex-direction: column;
         width: 100vw;
         align-items: center;
+        border-top: 1px solid var(--accent-very-darker);
     }
     .contactTitle{
-        border-top: 1px solid var(--accent-very-darker);
-        /* background-color: red; */
         width: 90%;
     }
     .contactTitle span{
@@ -361,14 +359,64 @@ main{
     .contactLink a{
         text-decoration: none;
         width: fit-content;
-        border-bottom: 1px solid var(--accent-darker);
         color: var(--accent-darker);
+        border-bottom: 1px solid var(--accent-darker);
     }
     /* Contact End */
     /* Footer */
     footer{
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--accent-darker);
+        align-items: center;
         width: 100vw;
+    }
+    .footerCont{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        gap: 3vh;
+        padding-top: 5vh;
+    }
+    .footerTitle span{
+        font-size: 4.5vh;
+        font-family: "Circular-Book";
+        color: var(--primary);
+    }
+    .footerSocial{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerSocial span{
+        font-size: 2.5vh;
+        font-family: "Circular-Light";
+        color: var(--accent);
+    }
+    .footerCont a{
+        font-size: 2vh;
+        font-family: "Circular-Light";
+        text-decoration: none;
+        color: var(--accent);
+        border-bottom: 1px solid var(--accent-darker);
+        width: fit-content;
+    }
+    .footerBacotan{
+        padding-top: 1.5vh;
+    }
+    .footerBacotan span{
+        font-size: 1.7vh;
+        font-family: "Circular-Light";
+    }
+    .footerCopyright{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.5vh;
+        padding-bottom: 3vh;
+    }
+    .footerCopyright span{
+        font-size: 1.5vh;
+        font-family: "Circular-Light";
+        color: var(--accent-darker);
     }
     /* Footer End*/
 }
