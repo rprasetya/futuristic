@@ -99,7 +99,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 3vh;
+        gap: 5vh;
     }
     nav ul li{
         list-style: none;
@@ -274,6 +274,7 @@ main{
         overscroll-behavior-x: contain;
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
+        padding-right: 5vw;
     }
     .carousel::-webkit-scrollbar{
         display: none;
