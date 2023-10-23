@@ -269,7 +269,8 @@ main{
     .carousel{
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: repeat(4, 1fr);
+        /* margin: auto; */
+        grid-template-columns: repeat(auto-fit, 1fr);
         scroll-behavior: auto;
         gap: 10vw;
         overflow-y: auto;
@@ -288,6 +289,7 @@ main{
         width: 75vw;
         border-radius: 10px;
         border: 1px solid var(--accent-darker);
+        height: fit-content;
     }
     .card .cardContent{
         display: flex;
@@ -301,7 +303,7 @@ main{
     .cardContent h1{
         font-size: 3vh;
         color: transparent;
-        -webkit-text-stroke: 1px var(--accent-darker);
+        -webkit-text-stroke: .1vh var(--accent-darker);
     }
     .cardContent p{
         font-size: 2vh;
@@ -311,7 +313,7 @@ main{
     /* About End */
     /* Contact */
     .contactCont{
-        margin-top: 5vh;
+        margin-top: 3vh;
         display: flex;
         flex-direction: column;
         width: 100vw;
