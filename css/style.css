@@ -239,7 +239,6 @@ main{
     .aboutCont{
         display: flex;
         flex-direction: column;
-        /* background-color: var(--bg-darker); */
         padding: 15vh 0;
         gap: 15vh;
     }
@@ -257,7 +256,6 @@ main{
     .groupImg h2{
         display: flex;
         position: absolute;
-        /* background-color: red; */
         font-size: 10vh;
         font-family: "Circular-Light";
         line-height: 10vh;
@@ -265,9 +263,14 @@ main{
         padding-top: 44.5vh;
         padding-left: 3vw;
     }
+    .groupImg .why2{
+        -webkit-text-stroke: .1vh var(--primary);
+    }
     .carousel{
         display: grid;
-        grid-auto-flow: column;
+        /* grid-auto-flow: column; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         scroll-behavior: auto;
         gap: 10vw;
         overflow-y: auto;
@@ -281,18 +284,16 @@ main{
     }
     .card{
         scroll-snap-align: start;
-        height: fit-content;
         display: flex;
         justify-content: start;
         width: 75vw;
-        height: 100%;
         border-radius: 10px;
         border: 1px solid var(--accent-darker);
     }
     .card .cardContent{
         display: flex;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 8vw;
         gap: 1vh;
         font-family: "Circular-Black";
         padding-top: 5vh;
