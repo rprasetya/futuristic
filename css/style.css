@@ -376,7 +376,7 @@ main{
         display: flex;
         width: 90%;
         flex-direction: column;
-        gap: 3vh;
+        gap: 2vh;
         padding-top: 5vh;
     }
     .footerTitle span{
@@ -405,7 +405,11 @@ main{
         padding-top: 1.5vh;
     }
     .footerBacotan span{
+        font-family: "Circular-Light";
         font-size: 1.7vh;
+    }
+    .footerBacotan p{
+        font-size: 2vh;
         font-family: "Circular-Light";
     }
     .footerCopyright{
