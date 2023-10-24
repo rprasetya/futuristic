@@ -274,7 +274,7 @@ main{
         gap: 10vw;
         overflow-x: scroll;
         /* overscroll-behavior-x: contain; */
-        /* scroll-snap-type: x mandatory; */
+        scroll-snap-type: x mandatory;
         /* scrollbar-width: none; */
         padding-right: 5vw;
 
