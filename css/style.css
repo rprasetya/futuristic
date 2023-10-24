@@ -269,32 +269,32 @@ main{
     .carousel{
         display: grid;
         grid-auto-flow: column;
-        /* margin: auto; */
-        grid-template-columns: repeat(auto-fit, 1fr);
-        scroll-behavior: auto;
+        grid-auto-columns: repeat(auto-fit, 1fr);
+        /* scroll-behavior: auto; */
         gap: 10vw;
-        overflow-y: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
+        overflow-x: scroll;
+        /* overscroll-behavior-x: contain; */
+        /* scroll-snap-type: x mandatory; */
+        /* scrollbar-width: none; */
         padding-right: 5vw;
+
     }
     .carousel::-webkit-scrollbar{
         display: none;
     }
     .card{
+        /* height: fit-content; */
         scroll-snap-align: start;
         display: flex;
         justify-content: start;
         width: 75vw;
         border-radius: 10px;
         border: 1px solid var(--accent-darker);
-        height: fit-content;
     }
     .card .cardContent{
         display: flex;
         flex-direction: column;
-        padding: 0 8vw;
+        padding: 0px 8vw;
         gap: 1vh;
         font-family: "Circular-Black";
         padding-top: 5vh;
@@ -313,7 +313,7 @@ main{
     /* About End */
     /* Contact */
     .contactCont{
-        margin-top: 3vh;
+        /* margin-top: -30vh; */
         display: flex;
         flex-direction: column;
         width: 100vw;
